@@ -79,7 +79,7 @@ OhioWhopper.MouseButton1Down:connect(function()
 		MoveDelay = 4,
 		HeightOffset = 1,
 		CanKill = true,
-		KillRange = 15,
+		KillRange = 150,
 		SpawnInFront = false,
 		ShatterLights = true,
 		FlickerLights = {
@@ -131,7 +131,7 @@ Depth.MouseButton1Down:connect(function()
 		MoveDelay = 4,
 		HeightOffset = 1,
 		CanKill = true,
-		KillRange = 15,
+		KillRange = 150,
 		SpawnInFront = false,
 		ShatterLights = true,
 		FlickerLights = {
@@ -183,7 +183,7 @@ Glush.MouseButton1Down:connect(function()
 		MoveDelay = 4,
 		HeightOffset = 1,
 		CanKill = true,
-		KillRange = 15,
+		KillRange = 150,
 		SpawnInFront = false,
 		ShatterLights = true,
 		FlickerLights = {
@@ -197,12 +197,12 @@ Glush.MouseButton1Down:connect(function()
 		},
 		CamShake = {
 			Enabled = true,
-			Values = {1.5, 20, 0.1, 1},
+			Values = {10.50, 200, 1.1, 20},
 			Range = 100
 		},
 		ResistCrucifix = true,
 		BreakCrucifix = true,
-		DeathMessage = {"You died to Glush.", "He is like rush.", "He Rebound 1 to 2 times.", "Use what you have learned from Rush!", "Good luck next time."},
+		DeathMessage = {"You died to Glush.", "He is like rush.", "He Rebound 1 to 2 times.", "Your Camera Will Shake A LOT...", "Good luck next time."},
 		IsCuriousLight = true
 	})
 
