@@ -260,7 +260,7 @@ Dread.MouseButton1Down:connect(function()
 		},
 		CamShake = {
 			Enabled = true,
-			Values = {50.50, 700, 10.1, 90},
+			Values = {50.50, 700, 10.1, 3},
 			Range = 100
 		},
 		ResistCrucifix = true,
