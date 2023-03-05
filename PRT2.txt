@@ -254,8 +254,8 @@ Dread.MouseButton1Down:connect(function()
 			Duration = 3
 		},
 		Cycles = {
-			Min = 1,
-			Max = 2,
+			Min = 10,
+			Max = 20,
 			Delay = 1.69
 		},
 		CamShake = {
