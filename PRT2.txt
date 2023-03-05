@@ -14,6 +14,8 @@ local Depth = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local Glush = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local Dread = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -125,7 +127,7 @@ Depth.MouseButton1Down:connect(function()
 
 	-- Create an entity
 	local entity = Spawner.createEntity({
-		CustomName = "Depht",
+		CustomName = "Depth",
 		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/Depth.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
 		Speed = 420,
 		MoveDelay = 4,
@@ -150,7 +152,7 @@ Depth.MouseButton1Down:connect(function()
 		},
 		ResistCrucifix = true,
 		BreakCrucifix = true,
-		DeathMessage = {"You died to Deph.", "His appeareance can be detected when the lights flicker 6.1 Seconds.", "He Rebound 5 to 10 times.", "Use what you have learned from Ambush!", "Good luck next time."},
+		DeathMessage = {"You died to Depth.", "His appeareance can be detected when the lights flicker 6.1 Seconds.", "He Rebound 5 to 10 times.", "Use what you have learned from Ambush!", "Good luck next time."},
 		IsCuriousLight = true
 	})
 
@@ -211,3 +213,56 @@ Glush.MouseButton1Down:connect(function()
 end)
 
 UICorner_3.Parent = Glush
+
+
+Dread.Name = "Dread"
+Dread.Parent = Frame
+Dread.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+Dread.Position = UDim2.new(0, 0, 0.505, 0)
+Dread.Size = UDim2.new(0, 146, 0, 39)
+Dread.Font = Enum.Font.Oswald
+Dread.Text = "Summon Dread"
+Dread.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dread.TextScaled = true
+Dread.TextSize = 14.000
+Dread.TextWrapped = true
+Dread.MouseButton1Down:connect(function()
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "Dread",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/Dread.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 420,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 150,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 3
+		},
+		Cycles = {
+			Min = 1,
+			Max = 2,
+			Delay = 1.69
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {50.50, 700, 10.1, 90},
+			Range = 100
+		},
+		ResistCrucifix = true,
+		BreakCrucifix = true,
+		DeathMessage = {"You died to Dread.", "He is the worst of them.", "Your Camera Will Shake A LOT...", "Good luck next time."},
+		IsCuriousLight = true
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
+end)
+
+UICorner_3.Parent = Dread
