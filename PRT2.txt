@@ -32,6 +32,8 @@ local RushHardcore = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Hcrushrnd = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local Hardcoremode = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
@@ -281,7 +283,7 @@ Dread.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_3.Parent = Dread
+UICorner_4.Parent = Dread
 
 
 RushRnd.Name = "RushRnd"
@@ -422,7 +424,7 @@ AmbushRnd.MouseButton1Down:connect(function()
 	Creator.runEntity(entity)
 end)
 
-UICorner_2.Parent = AmbushRnd
+UICorner_5.Parent = AmbushRnd
 
 A60Rnd.Name = "A60Rnd"
 A60Rnd.Parent = Frame
@@ -475,7 +477,7 @@ A60Rnd.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_2.Parent = AmbushRnd
+UICorner_6.Parent = A60Rnd
 
 ReboundRnd.Name = "Rebound Random"
 ReboundRnd.Parent = Frame
@@ -529,7 +531,7 @@ ReboundRnd.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_4.Parent = ReboundRnd
+UICorner_7.Parent = ReboundRnd
 
 
 DreadRnd.Name = "DreadRnd"
@@ -584,7 +586,7 @@ DreadRnd.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_3.Parent = Dread
+UICorner_8.Parent = DreadRnd
 
 AnitcheatBypass.Name = "AnitcheatBypass"
 AnitcheatBypass.Parent = Frame
@@ -773,6 +775,142 @@ Hcrushrnd.MouseButton1Down:connect(function()
 
 	-- Run the entity
 	Spawner.runEntity(entity)
+	
+	
+	wait(60)
+
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "Rush Hardcore",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/RushHardcore.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 920,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 150,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 3
+		},
+		Cycles = {
+			Min = 10,
+			Max = 20,
+			Delay = 0.00000000000000001
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {500.50, 700, 100.1, 10},
+			Range = 100
+		},
+		ResistCrucifix = false,
+		BreakCrucifix = true,
+		DeathMessage = {"You died to Rush???", "He seems not normal.", "I can figure that...", "Good luck next time..."},
+		IsCuriousLight = true
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
+	wait(60)
+
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "Rush Hardcore",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/RushHardcore.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 920,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 150,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 3
+		},
+		Cycles = {
+			Min = 10,
+			Max = 20,
+			Delay = 0.00000000000000001
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {500.50, 700, 100.1, 10},
+			Range = 100
+		},
+		ResistCrucifix = false,
+		BreakCrucifix = true,
+		DeathMessage = {"You died to Rush???", "He seems not normal.", "I can figure that...", "Good luck next time..."},
+		IsCuriousLight = true
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
+
+
+	wait(60)
+
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "Rush Hardcore",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/RushHardcore.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 920,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 150,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 3
+		},
+		Cycles = {
+			Min = 10,
+			Max = 20,
+			Delay = 0.00000000000000001
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {500.50, 700, 100.1, 10},
+			Range = 100
+		},
+		ResistCrucifix = false,
+		BreakCrucifix = true,
+		DeathMessage = {"You died to Rush???", "He seems not normal.", "I can figure that...", "Good luck next time..."},
+		IsCuriousLight = true
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
 end)
 
 UICorner_11.Parent = RushHardcore
+
+
+Hardcoremode.Name = "RushHardcore"
+Hardcoremode.Parent = Frame
+Hardcoremode.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+Hardcoremode.Position = UDim2.new(0.257, 0,0.914, 0)
+Hardcoremode.Size = UDim2.new(0, 109,0, 39)
+Hardcoremode.Font = Enum.Font.Oswald
+Hardcoremode.Text = "Summon Rush (Hardcore)"
+Hardcoremode.TextColor3 = Color3.fromRGB(255, 0, 0)
+Hardcoremode.TextScaled = true
+Hardcoremode.TextSize = 14.000
+Hardcoremode.TextWrapped = true
+Hardcoremode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Potato032/Doors-Fragmented-Mode/main/ScriptRemake"))()
+end)
+
+UICorner_12.Parent = Hardcoremode
