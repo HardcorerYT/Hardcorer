@@ -16,6 +16,14 @@ local Glush = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Dread = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local RushRnd = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AmbushRnd = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local A60Rnd = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ReboundRnd = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
@@ -266,3 +274,252 @@ Dread.MouseButton1Down:connect(function()
 end)
 
 UICorner_3.Parent = Dread
+
+
+RushRnd.Name = "RushRnd"
+RushRnd.Parent = Frame
+RushRnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+RushRnd.Position = UDim2.new(0.501, 0, 0.198, 0)
+RushRnd.Size = UDim2.new(0, 109, 0, 39)
+RushRnd.Font = Enum.Font.Oswald
+RushRnd.Text = "Summon Rush(Random)"
+RushRnd.TextColor3 = Color3.fromRGB(0, 0, 0)
+RushRnd.TextScaled = true
+RushRnd.TextSize = 14.000
+RushRnd.TextWrapped = true
+RushRnd.MouseButton1Down:connect(function()
+	wait(60)
+	
+	
+	local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+	local entity = Creator.createEntity({
+		CustomName = "Rush", -- Custom name of your entity
+		Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors%20Entity%20Spawner/Models/Rush.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+		Speed = 100, -- Percentage, 100 = default Rush speed
+		DelayTime = 2, -- Time before starting cycles (seconds)
+		HeightOffset = 0,
+		CanKill = true,
+		BreakLights = true,
+		FlickerLights = {
+			true, -- Enabled
+			1.5, -- Time (seconds)
+		},
+		Cycles = {
+			Min = 1,
+			Max = 1,
+			WaitTime = 2,
+		},
+		CamShake = {
+			true, -- Enabled
+			{5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+			100, -- Shake start distance (from Entity to you)
+		},
+		Jumpscare = {
+			true, -- Enabled ('false' if you don't want jumpscare)
+			{
+				Image1 = "rbxassetid://10483855823", -- Image1 url
+				Image2 = "rbxassetid://10483999903", -- Image2 url
+				Shake = true,
+				Sound1 = {
+					11395890995, -- SoundId
+					{ Volume = 1 }, -- Sound properties
+				},
+				Sound2 = {
+					11395890995, -- SoundId
+					{ Volume = 0.5 }, -- Sound properties
+				},
+				Flashing = {
+					true, -- Enabled
+					Color3.fromRGB(255, 255, 255), -- Color
+				},
+				Tease = {
+					true, -- Enabled ('false' if you don't want tease)
+					Min = 1,
+					Max = 3,
+				},
+			},
+		},
+		CustomDialog = {"You died to rush", "Just hide okay?", "Sorry I don't get payed enough", "So um yeah hah survive next-time."}, -- Custom death message (can be as long as you want)
+	})
+
+	Creator.runEntity(entity)
+end)
+
+
+AmbushRnd.Name = "AmbushRnd"
+AmbushRnd.Parent = Frame
+AmbushRnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+AmbushRnd.Position = UDim2.new(0.739, 0, 0.198, 0)
+AmbushRnd.Size = UDim2.new(0, 109, 0, 39)
+AmbushRnd.Font = Enum.Font.Oswald
+AmbushRnd.Text = "Summon Ambush(Random)"
+AmbushRnd.TextColor3 = Color3.fromRGB(0, 0, 0)
+AmbushRnd.TextScaled = true
+AmbushRnd.TextSize = 14.000
+AmbushRnd.TextWrapped = true
+AmbushRnd.MouseButton1Down:connect(function()
+	wait(60)
+	
+	local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+	local entity = Creator.createEntity({
+		CustomName = "Ambush", -- Custom name of your entity
+		Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors%20Entity%20Spawner/Models/Ambush.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+		Speed = 100, -- Percentage, 100 = default Rush speed
+		DelayTime = 2, -- Time before starting cycles (seconds)
+		HeightOffset = 0,
+		CanKill = true,
+		BreakLights = true,
+		FlickerLights = {
+			true, -- Enabled
+			1.5, -- Time (seconds)
+		},
+		Cycles = {
+			Min = 3,
+			Max = 6,
+			WaitTime = 2,
+		},
+		CamShake = {
+			true, -- Enabled
+			{5, 15, 0.1, 1}, -- Shake values (don't change if you don't know)
+			100, -- Shake start distance (from Entity to you)
+		},
+		Jumpscare = {
+			false, -- Enabled ('false' if you don't want jumpscare)
+			{
+				Image1 = "rbxassetid://10483855823", -- Image1 url
+				Image2 = "rbxassetid://10483999903", -- Image2 url
+				Shake = true,
+				Sound1 = {
+					11395890995, -- SoundId
+					{ Volume = 1 }, -- Sound properties
+				},
+				Sound2 = {
+					11395890995, -- SoundId
+					{ Volume = 0.5 }, -- Sound properties
+				},
+				Flashing = {
+					true, -- Enabled
+					Color3.fromRGB(255, 255, 255), -- Color
+				},
+				Tease = {
+					true, -- Enabled ('false' if you don't want tease)
+					Min = 1,
+					Max = 3,
+				},
+			},
+		},
+		CustomDialog = {"You died to ambush", "Hop In And Hop Out", "Or Hide Behind Something", "Good Luck."}, -- Custom death message (can be as long as you want)
+	})
+
+	Creator.runEntity(entity)
+end)
+
+UICorner_2.Parent = AmbushRnd
+
+A60Rnd.Name = "A60Rnd"
+A60Rnd.Parent = Frame
+A60Rnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+A60Rnd.Position = UDim2.new(0.501, 0, 0.296, 0)
+A60Rnd.Size = UDim2.new(0, 109, 0, 39)
+A60Rnd.Font = Enum.Font.Oswald
+A60Rnd.Text = "Summon A-60(Random)"
+A60Rnd.TextColor3 = Color3.fromRGB(0, 0, 0)
+A60Rnd.TextScaled = true
+A60Rnd.TextSize = 14.000
+A60Rnd.TextWrapped = true
+A60Rnd.MouseButton1Down:connect(function()
+	wait(60)
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "A-60",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/a-60.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 999,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 100,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 10
+		},
+		Cycles = {
+			Min = 1,
+			Max = 3,
+			Delay = 2
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {1.5, 20, 0.1, 1},
+			Range = 100
+		},
+		ResistCrucifix = false,
+		BreakCrucifix = true,
+		DeathMessage = {"You Died To A-60", "He Is Like Ambush", "Use what you learn form rush", "Hop In And Hop Out", "Or Hide Behind Something"},
+		IsCuriousLight = false
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
+end)
+
+UICorner_2.Parent = AmbushRnd
+
+ReboundRnd.Name = "Rebound Random"
+ReboundRnd.Parent = Frame
+ReboundRnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
+ReboundRnd.Position = UDim2.new(0, 739, 0.286, 0)
+ReboundRnd.Size = UDim2.new(0, 146, 0, 39)
+ReboundRnd.Font = Enum.Font.Oswald
+ReboundRnd.Text = "Summon Rebound(Rebound)"
+ReboundRnd.TextColor3 = Color3.fromRGB(0, 0, 0)
+ReboundRnd.TextScaled = true
+ReboundRnd.TextSize = 14.000
+ReboundRnd.TextWrapped = true
+ReboundRnd.MouseButton1Down:connect(function()
+	wait(60)
+	
+	-- Define the spawner
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/Source.lua"))()
+
+	-- Create an entity
+	local entity = Spawner.createEntity({
+		CustomName = "Rebound",
+		Model = "https://github.com/HardcorerYT/Hardcorer/blob/main/Rebound%202.rbxm?raw=true", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
+		Speed = 200,
+		MoveDelay = 4,
+		HeightOffset = 1,
+		CanKill = true,
+		KillRange = 100,
+		SpawnInFront = false,
+		ShatterLights = true,
+		FlickerLights = {
+			Enabled = true,
+			Duration = 1
+		},
+		Cycles = {
+			Min = 1,
+			Max = 3,
+			Delay = 2
+		},
+		CamShake = {
+			Enabled = true,
+			Values = {1.5, 20, 0.1, 1},
+			Range = 100
+		},
+		ResistCrucifix = false,
+		BreakCrucifix = true,
+		DeathMessage = {"You Died To Rebound", "He is simple", "He rebounds about 10 times", "Hop In And Hop Out", "Or Hide Behind Something"},
+		IsCuriousLight = true
+	})
+
+	-- Run the entity
+	Spawner.runEntity(entity)
+end)
+
+UICorner_4.Parent = ReboundRnd
+
