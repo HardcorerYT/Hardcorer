@@ -34,6 +34,8 @@ local Hcrushrnd = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local Hardcoremode = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
+local ImpossibleMode = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
 
 --Properties:
 
@@ -483,7 +485,7 @@ ReboundRnd.Name = "Rebound Random"
 ReboundRnd.Parent = Frame
 ReboundRnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
 ReboundRnd.Position = UDim2.new(0.739, 0 , 0.286, 0)
-ReboundRnd.Size = UDim2.new(0, 146, 0, 39)
+ReboundRnd.Size = UDim2.new(0, 109,0, 39)
 ReboundRnd.Font = Enum.Font.Oswald
 ReboundRnd.Text = "Summon Rebound(Rebound)"
 ReboundRnd.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -538,7 +540,7 @@ DreadRnd.Name = "DreadRnd"
 DreadRnd.Parent = Frame
 DreadRnd.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
 DreadRnd.Position = UDim2.new(0.501, 0,0.37, 0)
-DreadRnd.Size = UDim2.new(0, 146, 0, 39)
+DreadRnd.Size = UDim2.new(0, 109,0, 39)
 DreadRnd.Font = Enum.Font.Oswald
 DreadRnd.Text = "Summon Dread(Random)"
 DreadRnd.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -586,7 +588,7 @@ DreadRnd.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_8.Parent = DreadRnd
+UICorner_9.Parent = DreadRnd
 
 AnitcheatBypass.Name = "AnitcheatBypass"
 AnitcheatBypass.Parent = Frame
@@ -895,22 +897,40 @@ Hcrushrnd.MouseButton1Down:connect(function()
 	Spawner.runEntity(entity)
 end)
 
-UICorner_11.Parent = RushHardcore
+UICorner_11.Parent = Hcrushrnd
 
 
-Hardcoremode.Name = "RushHardcore"
+Hardcoremode.Name = "HardcoreMode"
 Hardcoremode.Parent = Frame
 Hardcoremode.BackgroundColor3 = Color3.fromRGB(129, 129, 129)
 Hardcoremode.Position = UDim2.new(0.257, 0,0.914, 0)
 Hardcoremode.Size = UDim2.new(0, 109,0, 39)
 Hardcoremode.Font = Enum.Font.Oswald
-Hardcoremode.Text = "Summon Rush (Hardcore)"
+Hardcoremode.Text = "Hardcore Mode"
 Hardcoremode.TextColor3 = Color3.fromRGB(255, 0, 0)
 Hardcoremode.TextScaled = true
 Hardcoremode.TextSize = 14.000
 Hardcoremode.TextWrapped = true
 Hardcoremode.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Potato032/Doors-Fragmented-Mode/main/ScriptRemake"))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/DoorsModes/HardMode(Multplayer%2CProtected).lua'))()
 end)
 
 UICorner_12.Parent = Hardcoremode
+
+
+ImpossibleMode.Name = "ImpossibleMode"
+ImpossibleMode.Parent = Frame
+ImpossibleMode.BackgroundColor3 = Color3.fromRGB(166, 0, 0)
+ImpossibleMode.Position = UDim2.new(0.501, 0,0.914, 0)
+ImpossibleMode.Size = UDim2.new(0, 109,0, 39)
+ImpossibleMode.Font = Enum.Font.Oswald
+ImpossibleMode.Text = "Impossible Mode"
+ImpossibleMode.TextColor3 = Color3.fromRGB(255, 0, 0)
+ImpossibleMode.TextScaled = true
+ImpossibleMode.TextSize = 14.000
+ImpossibleMode.TextWrapped = true
+ImpossibleMode.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Ukazix/impossible-mode/main/Protected_79.lua.txt'))()
+end)
+
+UICorner_14.Parent = ImpossibleMode
